@@ -1,4 +1,5 @@
 ## Project Plan
+
 1. Setup
    - Single repo project
    - React/typescript frontend
