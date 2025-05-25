@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   quality-checks:
@@ -18,12 +18,6 @@ jobs:
 
       - name: Run TypeScript type checking
         run: npm run type-check
-
-      - name: Run ESLint and fix
-        run: npm run lint:fix
-
-      - name: Format with Prettier
-        run: npm run format
 
       - name: Check for remaining ESLint errors
         run: npm run lint
