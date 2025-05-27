@@ -26,7 +26,7 @@ interface UserToReturn {
 
 const createNewUser = async (
   req: Request<unknown, unknown, NewUserEntry>,
-  res: Response<NewUserEntry>
+  res: Response<NewUserEntry>,
 ) => {
   const newUser = await User.create(req.body);
   res.status(200).json(newUser);
@@ -34,7 +34,7 @@ const createNewUser = async (
 
 const deleteUser = async (
   req: Request,
-  res: Response<string | { message: string }>
+  res: Response<string | { message: string }>,
 ) => {
   const user = await User.findById(req.params.id).select("-password");
   if (!user) {
@@ -57,7 +57,7 @@ const getUser = async (req: Request, res: Response<UserToReturn>) => {
 
 const updateUser = async (
   req: Request<unknown, unknown, updateUserEntry>,
-  res: Response<{ message: string }>
+  res: Response<{ message: string }>,
 ) => {
   console.log(req.body);
 

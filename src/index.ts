@@ -13,7 +13,7 @@ app.use(express.json());
 
 connectDb().catch((err: unknown) => {
   console.log(
-    err instanceof Error ? err.message : "Unable to connect database"
+    err instanceof Error ? err.message : "Unable to connect database",
   );
 });
 
