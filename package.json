@@ -17,6 +17,7 @@
   "author": "Samuli",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongoose": "^8.15.0"
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@eslint/js": "^9.27.0",
     "@tsconfig/node22": "^22.0.2",
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.2",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^22.15.21",
